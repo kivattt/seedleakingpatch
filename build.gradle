@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io/' }
+    }
+    dependencies {
+        classpath('com.github.Fox2Code.FoxLoader:dev:1.2.19')
+    }
+}
+
+apply plugin: 'foxloader.dev'
+
+version '1.0.0'
+
+foxloader {
+    // forceReload = true
+    modId = "seedleakingpatch"
+    modName = "SeedLeakingPatch"
+    modVersion = project.version
+    modDesc = "Patches world seed being leaked on login"
+    modWebsite = "https://github.com/kivattt/seedleakingpatch"
+    serverMod = "com.kiva.seedleakingpatch.SeedLeakingPatch"
+}
