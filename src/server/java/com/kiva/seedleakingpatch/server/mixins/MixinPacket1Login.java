@@ -1,4 +1,4 @@
-package com.kiva.seedleakingpatch.mixins;
+package com.kiva.seedleakingpatch.server.mixins;
 
 import net.minecraft.src.server.packets.Packet1Login;
 import org.spongepowered.asm.mixin.Mixin;
